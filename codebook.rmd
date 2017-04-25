@@ -92,7 +92,7 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 ```
 
 "Column" | "Min Val" | "1st Quartile" | "Median" | "Mean" | "3rd Quartile" | "Max Val"
-|---     |---			   |---	            |---		   |---     |---		         |---   | 
+|---  |---	  |---	       |---		   |---     |---		    |---   | 
 "PersonID" | "N/A" | "N/A" | "N/A" | "N/A" | "N/A" | "N/A"
 "Activities" | "N/A" | "N/A" | "N/A" | "N/A" | "N/A" | "N/A"
 "tBodyAcc.mean...X" | "-1.0000  " | " 0.2626  " | " 0.2772  " | " 0.2743  " | " 0.2884  " | " 1.0000  "
