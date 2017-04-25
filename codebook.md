@@ -71,14 +71,13 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 
 ## Code used to update sample data:
 >updateCodebook <- function() {
-  ##Setup
-  library("dplyr")
-  
-  ##Create Codebook sample
-  f <- "C:\\Users\\Chris\\Documents\\R_Projects\\CourseProject\\tidyDataset.csv"
-  data <- read.csv(f,header = TRUE, sep = ",")
-  codeBook <- t(summary(data[4:ncol(data)]))
-  
-  write.table(codeBook,file = "codebook.csv", sep = ",")
-  
-}
+>  ##Setup
+>  library("dplyr")
+>  
+>  ##Create Codebook sample
+>  f <- "C:\\Users\\Chris\\Documents\\R_Projects\\CourseProject\\tidyDataset.csv"
+>  data <- read.csv(f,header = TRUE, sep = ",")
+>  codeBook <- t(summary(data[4:ncol(data)]))
+>  
+>  write.table(codeBook,file = "codebook.csv", sep = ",")
+>}
