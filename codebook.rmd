@@ -1,3 +1,8 @@
+---
+title: "Codebook"
+output: github_document
+---
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -5,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Data Source:
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Universit√† degli Studi di Genova.
+DITEN - Universit‡ degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
@@ -73,8 +78,7 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 - tBodyGyroMean
 - tBodyGyroJerkMean
 
-```{Update Codebook}
-updateCodebook <- function() {
+```{r}
   ##Setup
   library("dplyr")
   
@@ -84,6 +88,6 @@ updateCodebook <- function() {
   codeBook <- t(summary(data[4:ncol(data)]))
   
   write.table(codeBook,file = "codebook.csv", sep = ",")
-}
+  print(codeBook)
 ```
 
