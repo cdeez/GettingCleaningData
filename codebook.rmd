@@ -91,7 +91,7 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
   print(codeBook)
 ```
 
-PersonID|N/A|N/A|N/A|N/A|N/A|N/A
+"PersonID"|"N/A"|"N/A"|"N/A"|"N/A"|"N/A"|"N/A"
 Activities|N/A|N/A|N/A|N/A|N/A|N/A
 tBodyAcc.mean...X|-1.0000  | 0.2626  | 0.2772  | 0.2743  | 0.2884  | 1.0000  
 tBodyAcc.mean...Y|-1.00000  |-0.02490  |-0.01716  |-0.01774  |-0.01062  | 1.00000  
