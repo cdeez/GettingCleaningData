@@ -30,10 +30,10 @@ mergedDs <- cbind(mergedSubjects, mergedMoves, mergedDs)
 names(mergedDs)[1:2] <- c("PersonID", "Activities")
 
 ##=====Write out Tidy dataset=====
-write.table(mergedDs, file = "tidyDataset.csv", sep = ",", col.names = NA,
-            qmethod = "double")
+write.table(mergedDs, file = "tidyDataset.csv", sep = ",",
+            qmethod = "double", row.names = FALSE)
 
 ##=====Second Tidy dataset=====
 group_by(mergedDs, PersonID, Activities) %>% summarise_each(funs(mean)) %>%
-	write.table(file = "tidySummaryDataset.csv", sep = ",", col.names = NA,
-            qmethod = "double")
+	write.table(file = "tidySummaryDataset.csv", sep = ",", 
+            qmethod = "double",  row.name=FALSE)
